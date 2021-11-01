@@ -124,5 +124,6 @@ var endGame = function() {
   
 }
 
+
 startGame();
 endGame();
