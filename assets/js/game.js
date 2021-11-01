@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-window.alert("This is an alert!  Javascript is running!");
-=======
+
 var playerName = window.prompt("What is your robot's name?");
 var playerHealth = 100;
 var playerAttack = 10;
@@ -16,7 +14,7 @@ console.log(enemyNames[0]);
 console.log(enemyNames[3]);
 
 // fight function (now with parameter for enemy's name)
-var fight = function(enemyName) {
+var fight = function(enemyNames) {
   while (playerHealth > 0 && enemyHealth > 0) {
     // ask player if they'd like to fight or run
     var promptFight = window.prompt('Would you like to FIGHT or SKIP this battle? Enter "FIGHT" or "SKIP" to choose.');
@@ -127,4 +125,6 @@ var endGame = function() {
   
 }
 
-//startGame();
+
+startGame();
+endGame();
