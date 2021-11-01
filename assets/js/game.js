@@ -16,7 +16,7 @@ console.log(enemyNames[0]);
 console.log(enemyNames[3]);
 
 // fight function (now with parameter for enemy's name)
-var fight = function(enemyNames) {
+var fight = function(enemyName) {
   while (playerHealth > 0 && enemyHealth > 0) {
     // ask player if they'd like to fight or run
     var promptFight = window.prompt('Would you like to FIGHT or SKIP this battle? Enter "FIGHT" or "SKIP" to choose.');
@@ -39,12 +39,12 @@ var fight = function(enemyNames) {
     // remove enemy's health by subtracting the amount set in the playerAttack variable
     enemyHealth = enemyHealth - playerAttack;
     console.log(
-      playerName + ' attacked ' + enemyNames + '. ' + enemyNames + ' now has ' + enemyHealth + ' health remaining.'
+      playerName + ' attacked ' + enemyName + '. ' + enemyName + ' now has ' + enemyHealth + ' health remaining.'
     );
 
     // check enemy's health
     if (enemyHealth <= 0) {
-      window.alert(enemyNames + ' has died!');
+      window.alert(enemyName + ' has died!');
 
       // award player money for winning
       playerMoney = playerMoney + 20;
@@ -52,7 +52,7 @@ var fight = function(enemyNames) {
       // leave while() loop since enemy is dead
       break;
     } else {
-      window.alert(enemyNames + ' still has ' + enemyHealth + ' health left.');
+      window.alert(enemyName + ' still has ' + enemyHealth + ' health left.');
     }
 
     // remove players's health by subtracting the amount set in the enemyAttack variable
@@ -127,6 +127,4 @@ var endGame = function() {
   
 }
 
-startGame();
-endGame();
->>>>>>> develop
+//startGame();
