@@ -109,6 +109,7 @@ var endGame = function() {
   if (playAgainConfirm) {
     startGame();
   }
+  // if player isn't alive, stop the game
   else {
     window.alert("Thank you for playing Robot Gladiators! Come back soon!");
     //break;
@@ -120,8 +121,5 @@ console.log("entered the shop");
 };
 
 startGame();
-<<<<<<< HEAD
-endGame();
-=======
 //endGame();
->>>>>>> develop
+
